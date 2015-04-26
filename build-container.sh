@@ -1,5 +1,5 @@
 #!/bin/sh
-docker build -t skydns-build - < ./build-container/Dockerfile
+docker build -t skydns-build - < ./build-Dockerfile
 docker images
 echo "Starting container"
 CID=$(docker run -d skydns-build)
